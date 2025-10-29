@@ -1,5 +1,11 @@
 // 应用数据 - 添加了序号属性，按照序号降序排序
 const apps = [
+    
+    {
+        id: 7,
+        title: "页面集成展示",
+        url: "https://page-integration-display.vercel.app/"
+    },
     {
         id: 6,
         title: "菜谱搜索器",
