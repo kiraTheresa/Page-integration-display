@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframe嵌入测试</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .iframe-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+            display: block;
+        }
+        .info {
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+            text-align: center;
+            color: #666;
+        }
+        @media (max-width: 768px) {
+            iframe {
+                height: 70vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>iframe嵌入测试 - 菜谱搜索器</h1>
+    
+    <div class="iframe-container">
+        <iframe src="https://menu-searcher-umber.vercel.app/" title="菜谱搜索器" loading="lazy"></iframe>
+    </div>
+    
+    <div class="info">
+        <p>这是一个iframe嵌入测试页面，用于测试直接嵌入Vercel应用的效果。</p>
+    </div>
+</body>
+</html>
